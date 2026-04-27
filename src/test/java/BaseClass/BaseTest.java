@@ -1,7 +1,9 @@
-package Core;
+package BaseClass;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import Core.DriverManager;
 
 public class BaseTest {
 

@@ -1,7 +1,7 @@
 package stepdefinitions;
 
 import io.cucumber.java.Before;
-import Core.BaseTest;
+import BaseClass.BaseTest;
 import Core.DriverManager;
 import io.cucumber.java.After;
 
