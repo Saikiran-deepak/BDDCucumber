@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.smartLocators</groupId>
-  <artifactId>smartLocators</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.smartLocators</groupId>
+	<artifactId>smartLocators</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -13,11 +15,11 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.31.0</version>
 		</dependency>
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.8.0</version>
-</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.8.0</version>
+		</dependency>
 
 
 		<!-- SLF4J API -->
@@ -91,47 +93,47 @@
 			<version>8.0.33</version>
 		</dependency>
 
-<dependency>
-    <groupId>org.apache.commons</groupId>
-    <artifactId>commons-csv</artifactId>
-    <version>1.10.0</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.10.0</version>
+		</dependency>
 
-<!-- Cucumber -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>7.15.0</version>
-    </dependency>
+		<!-- Cucumber -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.15.0</version>
+		</dependency>
 
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-testng</artifactId>
-        <version>7.15.0</version>
-    </dependency>
-    		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.15.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.5.0</version>
 		</dependency>
-		
-	<dependency>
-	    <groupId>com.mysql</groupId>
-	    <artifactId>mysql-connector-j</artifactId>
-	    <version>8.0.33</version>
-	</dependency>
+
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.0.33</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M9</version>
+				<version>3.2.5</version>
 				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					<includes>
+						<include>**/*Runner.java</include>
+					</includes>
 				</configuration>
 			</plugin>
 
@@ -176,8 +178,8 @@
 		</plugins>
 	</build>
 	<properties>
-  		<sonar.projectKey>SeleniumFrameworlPomtest</sonar.projectKey>
-  		<sonar.host.url>http://localhost:9000</sonar.host.url>
-  		<sonar.login>sqp_d269f08afcfaaba1779a837087da5c583477ea3b</sonar.login>
+		<sonar.projectKey>SeleniumFrameworlPomtest</sonar.projectKey>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.login>sqp_d269f08afcfaaba1779a837087da5c583477ea3b</sonar.login>
 	</properties>
 </project>
