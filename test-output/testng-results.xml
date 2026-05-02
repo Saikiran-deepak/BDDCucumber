@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T10:53:34 IST" name="Default suite" finished-at="2026-04-27T10:53:43 IST" duration-ms="8761">
+  <suite started-at="2026-05-01T16:14:25 IST" name="Default suite" finished-at="2026-05-01T16:14:54 IST" duration-ms="29496">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@445b295b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AmazonLoginRunner@445b295b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-27T10:53:34 IST" name="Default test" finished-at="2026-04-27T10:53:43 IST" duration-ms="8761">
-      <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@445b295b]" started-at="2026-04-27T10:53:34 IST" name="setUpClass" finished-at="2026-04-27T10:53:35 IST" duration-ms="689" status="PASS">
+    <test started-at="2026-05-01T16:14:25 IST" name="Default test" finished-at="2026-05-01T16:14:54 IST" duration-ms="29496">
+      <class name="runners.AmazonLoginRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.AmazonLoginRunner@445b295b]" started-at="2026-05-01T16:14:25 IST" name="setUpClass" finished-at="2026-05-01T16:14:26 IST" duration-ms="611" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3b48e183]]>
+                <![CDATA[org.testng.TestRunner@3a790e40]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@445b295b]" started-at="2026-04-27T10:53:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T10:53:43 IST" duration-ms="7991" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AmazonLoginRunner@445b295b]" started-at="2026-05-01T16:14:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-01T16:14:54 IST" duration-ms="28789" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Valid Login"]]>
+                <![CDATA["Login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Feature"]]>
+                <![CDATA["Login to Amazon application"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@445b295b]" started-at="2026-04-27T10:53:43 IST" name="tearDownClass" finished-at="2026-04-27T10:53:43 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.AmazonLoginRunner@445b295b]" started-at="2026-05-01T16:14:54 IST" name="tearDownClass" finished-at="2026-05-01T16:14:54 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.TestRunner -->
+      </class> <!-- runners.AmazonLoginRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
